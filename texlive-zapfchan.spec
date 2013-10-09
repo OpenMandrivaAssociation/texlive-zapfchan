@@ -1,12 +1,12 @@
-# revision 21993
+# revision 31835
 # category Package
 # catalog-ctan /fonts/urw/base35
-# catalog-date 2011-03-01 21:42:17 +0100
+# catalog-date 2012-06-06 22:57:48 +0200
 # catalog-license gpl
 # catalog-version undef
 Name:		texlive-zapfchan
-Version:	20110301
-Release:	2
+Version:	20120606
+Release:	1
 Summary:	URW "Base 35" font pack for LaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/urw/base35
@@ -49,8 +49,6 @@ Symbol); - URW Bookman; - URW Chancery L Medium Italic
 %{_texmfdistdir}/fonts/tfm/adobe/zapfchan/pzcmi8c.tfm
 %{_texmfdistdir}/fonts/tfm/adobe/zapfchan/pzcmi8r.tfm
 %{_texmfdistdir}/fonts/tfm/adobe/zapfchan/pzcmi8t.tfm
-%{_texmfdistdir}/fonts/tfm/cspsfonts-adobe/zapfchan/pzcmi8z.tfm
-%{_texmfdistdir}/fonts/tfm/cspsfonts-adobe/zapfchan/rpzcmi.tfm
 %{_texmfdistdir}/fonts/tfm/urw35vf/zapfchan/uzcmi7t.tfm
 %{_texmfdistdir}/fonts/tfm/urw35vf/zapfchan/uzcmi8c.tfm
 %{_texmfdistdir}/fonts/tfm/urw35vf/zapfchan/uzcmi8r.tfm
@@ -61,7 +59,6 @@ Symbol); - URW Bookman; - URW Chancery L Medium Italic
 %{_texmfdistdir}/fonts/vf/adobe/zapfchan/pzcmi7t.vf
 %{_texmfdistdir}/fonts/vf/adobe/zapfchan/pzcmi8c.vf
 %{_texmfdistdir}/fonts/vf/adobe/zapfchan/pzcmi8t.vf
-%{_texmfdistdir}/fonts/vf/cspsfonts-adobe/zapfchan/pzcmi8z.vf
 %{_texmfdistdir}/fonts/vf/urw35vf/zapfchan/uzcmi7t.vf
 %{_texmfdistdir}/fonts/vf/urw35vf/zapfchan/uzcmi8c.vf
 %{_texmfdistdir}/fonts/vf/urw35vf/zapfchan/uzcmi8t.vf
@@ -81,16 +78,3 @@ Symbol); - URW Bookman; - URW Chancery L Medium Italic
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar dvips fonts tex %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Thu Jan 05 2012 Paulo Andrade <pcpa@mandriva.com.br> 20110301-2
-+ Revision: 757779
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20110301-1
-+ Revision: 719970
-- texlive-zapfchan
-- texlive-zapfchan
-- texlive-zapfchan
-
